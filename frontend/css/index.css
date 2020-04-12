@@ -1,0 +1,203 @@
+* {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin:0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #cfcfcf;
+}
+header {
+    background: #33363b;
+    border-bottom: 2px solid #66c4b7;
+    -webkit-box-shadow: 0px 5px 18px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 18px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 18px -5px rgba(0,0,0,0.75);
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.search {
+    position: absolute;
+    right: 0;
+    transform: translateY(50%);
+    bottom: 50%;
+    margin: 0 15px;
+}
+
+.filtration-text{
+    text-align: center;
+    cursor: pointer;
+}
+
+.filtration-text:hover{
+    filter: brightness(1.5);
+    
+}
+
+.filtration-text p{
+    display: inline-block;
+    color: rgb(116, 116, 116);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+    letter-spacing: 0.3rem;
+    
+}
+
+/* .filtration-text p:after {
+    display: inline-block;
+    content: url('../img/click.svg');
+    margin-top: 5px;
+    transform: translateY(10%);
+} */
+
+.loginArea {
+    padding: 0.1rem 0.3rem;
+    border: none;
+    font-size: 1.8rem;
+    width: 15rem;
+}
+.loginSub {
+    background: #66c4b7;
+    color: #fff;
+    padding: 0.1rem;
+    border: none;
+    width: 5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filtration {
+    padding: 10px;
+    background: #33363b;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateY(-100%);
+}
+
+#filtration-id {
+    position: relative;
+    height: 0px;
+    z-index: -1;
+}
+
+.filtration p {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    margin: 0 10px 0 0;
+}
+.filtration select {
+    background:rgb(116, 116, 116);
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    border: none;
+}
+
+.wave {
+    text-align: center;
+}
+
+.level {
+    text-align: center;
+}
+
+.go {
+    text-align: center;
+}
+.goSub {
+    background: #66c4b7;
+    color: #fff;
+    padding: 1px;
+    border: none;
+    width: 5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+table {
+    font-size: 1.8rem;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+}
+th {
+    border-style: solid;
+    border-width: 4px 0px;
+    border-color: #66c4b7;
+    font-size: 2rem;
+    background: rgb(236, 236, 236);
+    color: black;
+    padding: 10px;
+    margin: 2px 0;
+}
+td {
+    border-style: solid;
+    border-width: 4px 1px 0 0;
+    border-color: #cfcfcf;
+    background: rgb(236, 236, 236);
+    padding: 5px;
+}
+
+/* .datatime {
+    position: fixed;
+    background: rgba(51,54,59, 0.8);
+    left: 0;
+    bottom: 10%;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    transform: rotate(90deg) translateY(100%);
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    z-index: 10;
+}  */
+
+@media (max-width: 1000px)
+{
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 775px)
+{
+    html {
+        font-size: 6px;
+    }
+    
+}
+
+@media (max-width: 767px)
+{
+    .wave {
+        margin-bottom:5px;
+    }
+    
+    .level {
+        margin-bottom:5px;
+    }
+    
+}
+
+@media (max-width: 475px)
+{
+    .loginArea {
+        width: 10rem;
+    }
+}

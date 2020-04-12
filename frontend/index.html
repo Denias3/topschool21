@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Рейтинг школы 21</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-4">
+                    <h1>Рейтинг школы 21</h1>
+                </div>
+                <div class="col-md-4 col-3">
+                    <div id="open-fil" class="filtration-text">
+                            <p>Фильтры поиска</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-5">
+                    <div class="search">
+                        <form>
+                            <input class="loginArea" id="loginArea" type="text" placeholder="Логин">
+                            <input class="loginSub" id="loginSub" type="submit" value="Найти">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="filtration-id">
+        <div class="container">
+            <div  class="filtration">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="wave">
+                                    <p>Волны</p>
+                                    <select id='waveid'>
+                                        <option>Все</option>
+                                        <option>Первая</option>
+                                        <option>Вторая</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="level">
+                                    <p>Уровни</p>
+                                    <select id='ordid'>
+                                        <option>По убыванию</option>
+                                        <option>По возрастанию</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="go">
+                            <input id='goSubid' class="goSub" type="submit" value="ГО">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+            <table id="table-id">
+                <tr>
+                    <th>№</th>
+                    <th>Логин</th>
+                    <th>Уровень</th>
+                </tr>
+            </table>
+    </div>
+    <!-- <div class="datatime">2019-05-27 02:54:31</div> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
